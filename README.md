@@ -21,7 +21,7 @@ This project uses positional arguments to allow for customization of parameters.
 The positional arguments may be used by running a command of the following form:
 
 `cargo run -- [floors] [num_elevators] [steps]`
-
+```
 floors - This is the number of floors that will be simulated.
          When people appear, they will appear on a random floor, and be headed
          to a random target floor.
@@ -39,7 +39,7 @@ steps - This is the number of steps the simulation will run for. Each step
         is spawned every 30 steps.
 
         Default: 2000
-
+```
 Overview:
 
 This project simulates people using an elevator system in a building with a
@@ -48,7 +48,7 @@ controller uses dependency injection, which allows it to be swapped out, should
 a more efficient elevator controller algorithm be designed. 
 
 Output:
-
+```
 Floor: 9 [..] Waiting: 0 |   .    .
 Floor: 8 [..] Waiting: 0 |   .    .
 Floor: 7 [..] Waiting: 0 |   .    .
@@ -59,7 +59,7 @@ Floor: 3 [..] Waiting: 0 |   .    .
 Floor: 2 [..] Waiting: 0 |   .    .
 Floor: 1 [..] Waiting: 0 |   .    .
 Floor: 0 [..] Waiting: 0 |   .    .
-
+```
 Here is an example output step. Two people are currently waiting on floor 5.
 They have each pressed a different elevator button, so one is heading up and
 the other is heading down. There are currently two elevators, with IDs of 0 and
